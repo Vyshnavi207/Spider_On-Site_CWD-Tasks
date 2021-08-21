@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="maindiv">
+            <div class="text">
+                <textarea id="convert" rows="5" type="text" placeholder="Enter Text Here"></textarea>
+            </div>
+        </div>
+        <div class="container">
+            <div id="style" >Font Style :</div>
+            <select  id="contain">
+                <option value="italic" selected>Italic</option>
+                <option value="cursive">Cursive</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+            <div id="colour" onclick="colour()">Font Colour :</div>
+            <select id="contain2">
+                <option  value="violet" >Violet</option>
+                <option  value="blue">Blue</option>
+                <option  value="green">Green</option>
+                <option  value="yellow">Yellow</option>
+                <option  value="orange">Orange</option>
+                <option  value="red" selected>Red</option>
+            </select> 
+            <div id="size" onclick="size()">Font Size :</div>
+            <select id="contain3">
+                <option  value="20px" >Small</option>
+                <option  value="30px" selected>Medium</option>
+                <option  value="50px">Large</option>
+            </select>
+            <!-- <button id="save" onclick="save()">Save</button> -->
+        </div>
+        <div class="change1">
+        <button id="change" onclick="change()">Change</button>
+        <button id="save" onclick="save()">Save to file</button>
+        </div>
+    <script src="text.js"></script>
+</body>
+</html>
