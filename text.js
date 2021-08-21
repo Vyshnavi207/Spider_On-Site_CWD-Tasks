@@ -16,17 +16,10 @@ function change(){
 }
 
 function save(){
-    console.log('vyshu');
     const filename = 'Downloadtext.txt';
     const textvalue = gettext.value;
-    console.log(textvalue);
-    var download = document.createElement('downloadfile');
-    download.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(textvalue));
+    var download = document.getElementById("file");
+    download.setAttribute('href', 'data:text/plain;charset=utf-8,' + textvalue);
     download.setAttribute('download',filename);
-    download.style.display = 'none';
-    document.body.appendChild(download);
     download.click();
-    document.body.removeChild(download);
-
-
 } 
